@@ -1,0 +1,1 @@
+# Dockerised Go Project Template
