@@ -1,0 +1,20 @@
+services:
+  service_foo:
+    build:
+      context: ./service_foo
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./service_foo:/app
+      - /app/pkg/mod
+    environment:
+      - GO_ENV=development
+
+  service_bar:
+    build:
+      context: ./service_bar
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./service_bar:/app
+      - /app/pkg/mod
+    environment:
+      - GO_ENV=development

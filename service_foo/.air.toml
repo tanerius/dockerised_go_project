@@ -1,0 +1,9 @@
+[build]
+  cmd = "go build -o ./tmp/main -buildvcs=false ."
+  bin = "./tmp/main"
+  include_ext = ["go"]
+  exclude_dir = ["vendor", "tmp"]
+  exclude_file = []
+
+[log]
+  level = "debug"

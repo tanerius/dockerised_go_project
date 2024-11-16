@@ -1,0 +1,18 @@
+# Use the specified Golang version for production
+FROM golang:1.23.3 AS builder
+
+WORKDIR /app
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY . .
+RUN go build -o your_service_name .
+
+# Minimal runtime image
+FROM debian:bullseye-slim
+
+WORKDIR /root/
+COPY --from=builder /app/your_service_src_location .
+
+CMD ["./your_service_name"]
