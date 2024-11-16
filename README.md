@@ -2,7 +2,9 @@
 
 This is a very simple boilerplate template in Golang used to start uyou off with a cleanly structured multi-service Golang project.  
   
-It Is currently built using Golang version `go1.22.3`. It uses a `dev` and `prod` environment for development and production respectively. The `dev` uses [AIR v1.61.1](https://github.com/air-verse/air) for live reload of the apps in development. 
+I needed something like this in order to avoid the boilerplate stuff. Not there is much but still any time saved is worth it!
+  
+This is currently built using Golang version `go1.22.3`. It uses a `dev` and `prod` environment for development and production respectively. The `dev` uses [AIR v1.61.1](https://github.com/air-verse/air) for live reload of the apps in development. 
 
 ## Requirements
 
